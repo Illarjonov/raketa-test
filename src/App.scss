@@ -1,0 +1,375 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+  margin-bottom: 100px;
+  max-width: 1264px;
+}
+
+.App {
+  width: 100%;
+  margin: 0;
+}
+
+.contentBooks {
+  max-width: 1264px;
+  width: 100%;
+  flex-wrap: wrap;
+  background: none;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.header {
+  // position: absolute;
+  // width: 1920px;
+  contain: layout;
+  pointer-events: none;
+  // position: fixed;
+  top: 0;
+  width: 100%;
+  height: 400px;
+  // height: 400px;
+  // left: 0px;
+  // top: 0px;
+
+  background: url('../public/header.jpg');
+}
+
+.mainText {
+  margin-top: 64px;
+  height: 50px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 50px;
+
+  text-align: center;
+  color: #0D0D0D;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.nullCount{
+  margin-top: 30px;
+  height: 30px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 50px;
+
+  text-align: center;
+  color: #0D0D0D;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.options {
+  // margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 16px;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+}
+
+.textOption {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+
+
+  /* Basic Colors / Re */
+
+  color: #69737B;
+
+
+}
+
+.OptionsInput {
+  box-sizing: border-box;
+  width: 300px;
+  height: 36px;
+  background: #FFFFFF;
+
+  border: 1px solid #C2C4C6;
+  border-radius: 6px;
+}
+
+.OptionsSelect {
+  box-sizing: border-box;
+  width: 300px;
+  height: 36px;
+  background: #FFFFFF;
+
+  border: 1px solid #C2C4C6;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.OptionsButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  // padding: 6px 16px;
+  gap: 10px;
+  color: #FFFFFF;
+  width: 298px;
+  height: 36px;
+  cursor: pointer;
+  /* Primary btn colors */
+
+  border-radius: 6px;
+
+}
+
+.OptionsButton p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  text-align: center;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+
+  background: #DCDEDE;
+
+}
+
+.countBooks {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+
+  /* Basic Colors / Re */
+
+  color: #69737B;
+}
+
+.books {
+  max-width: 1240px;
+  width: 100%;
+}
+
+.wrapper {
+  // margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.showmore {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 10px;
+  gap: 10px;
+
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  /* Basic Colors / SuperWhite */
+
+  background: #FFFFFF;
+  /* Basic Colors / Fa */
+
+  border: 1px solid #C2C4C6;
+  border-radius: 6px;
+}
+
+@media (max-width: 1440px) {
+  .content {
+    max-width: 1264px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content {
+    max-width: 960px;
+  }
+
+  .header{
+    height: 200px;
+  }
+  .book {
+    width: 30%;
+  }
+
+  .contentBooks {
+    max-width: 992px;
+  }
+
+  .OptionsButton {
+    width: 230px;
+    gap: 5px;
+  }
+
+  .OptionsInput {
+    width: 230px;
+    gap: 5px;
+  }
+
+  .OptionsSelect {
+    width: 230px;
+    gap: 5px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .content {
+    max-width: 700px;
+  }
+
+  .header{
+    height: 150px;
+  }
+  .book {
+    width: 320px;
+  }
+
+  .contentBooks {
+    max-width: 700px;
+    justify-content: space-between;
+  }
+
+  .OptionsButton {
+    width: 150px;
+    gap: 5px;
+  }
+
+  .OptionsInput {
+    width: 150px;
+    gap: 5px;
+  }
+
+  .OptionsSelect {
+    width: 150px;
+    gap: 5px;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .content {
+    max-width: 365px;
+  }
+
+  .header{
+    height: 120px;
+  }
+  .book {
+    width: 320px;
+    zoom: 0.7;
+  }
+
+  .mainText{
+    margin-top: 35px;
+    zoom: 0.75;
+  }
+
+  .contentBooks {
+    // max-width: 400px;
+    justify-content: space-between;
+    zoom: 0.55;
+  }
+  
+  .options {
+    zoom: 0.55;
+  }
+  .OptionsButton {
+    width: 150px;
+    gap: 5px;
+  }
+
+  .OptionsInput {
+    width: 150px;
+    gap: 5px;
+  }
+
+  .OptionsSelect {
+    width: 150px;
+    gap: 5px;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .content {
+    max-width: 300px;
+  }
+
+  .header{
+    height: 100px;
+  }
+  .book {
+    width: 320px;
+    zoom: 0.7;
+  }
+
+  .contentBooks {
+    // max-width: 400px;
+    justify-content: space-between;
+    zoom: 0.45;
+  }
+  .mainText{
+    margin-top: 30px;
+    zoom: 0.7
+  }
+  .options {
+    zoom: 0.45;
+  }
+  .OptionsButton {
+    width: 150px;
+    gap: 5px;
+  }
+
+  .OptionsInput {
+    width: 150px;
+    gap: 5px;
+  }
+
+  .OptionsSelect {
+    width: 150px;
+    gap: 5px;
+  }
+
+}
+
